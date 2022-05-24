@@ -1,0 +1,63 @@
+-- GET RICKROLLED LOL
+-- (Sorry if I made you mad)
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextButton = Instance.new("TextButton")
+local rickroll = Instance.new("Frame")
+local caught4k = Instance.new("ImageButton")
+local THEMANHIMSELF = Instance.new("ImageLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.Workspace
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.Position = UDim2.new(0.409952611, 0, 0.175292149, 0)
+Frame.Size = UDim2.new(0, 538, 0, 388)
+Frame.ZIndex = 2
+
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.BorderSizePixel = 14
+TextButton.Position = UDim2.new(-0.624535441, 0, -0.216494843, 0)
+TextButton.Size = UDim2.new(0, 1010, 0, 555)
+TextButton.ZIndex = 3
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "GIVE ADMIN TOOLS"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 14.000
+
+rickroll.Name = "rickroll"
+rickroll.Parent = ScreenGui
+rickroll.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+rickroll.Position = UDim2.new(0.405213267, 0, 0.345575958, 0)
+rickroll.Size = UDim2.new(0, 239, 0, 185)
+
+caught4k.Name = "caught 4k"
+caught4k.Parent = rickroll
+caught4k.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+caught4k.Position = UDim2.new(1.59414232, 0, -0.978378356, 0)
+caught4k.Size = UDim2.new(0, 291, 0, 547)
+caught4k.ZIndex = 2
+caught4k.Image = "http://www.roblox.com/asset/?id=8859146533"
+
+THEMANHIMSELF.Name = "THE MAN HIMSELF"
+THEMANHIMSELF.Parent = rickroll
+THEMANHIMSELF.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+THEMANHIMSELF.Position = UDim2.new(-1.29288697, 0, -0.978378296, 0)
+THEMANHIMSELF.Size = UDim2.new(0, 690, 0, 547)
+THEMANHIMSELF.Image = "http://www.roblox.com/asset/?id=107442814"
+
+-- Scripts:
+
+local function KCZDBTS_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		script.Parent.Parent.Visible = false
+	end)
+	
+end
+coroutine.wrap(KCZDBTS_fake_script)()
